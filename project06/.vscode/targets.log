@@ -1,0 +1,573 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Sun May 15 19:35:00 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AGENT_FOLDER = /home/jnyamiak/.vscode-server
+# environment
+XDG_SESSION_TYPE = tty
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# default
+MAKE_VERSION := 4.2.1
+# makefile
+CURDIR := /home/jnyamiak/cs3/project06-candyapple
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# environment
+_ = /home/jnyamiak/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/node
+# makefile (from 'Makefile', line 44)
+CFLAGS = -fsanitize=address -Iinclude $(shell sdl2-config --cflags) -Wall -g -fno-omit-frame-pointer
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1352/bus
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# makefile (from 'Makefile', line 78)
+DEMO_BINS = $(addsuffix .html, $(addprefix bin/,$(DEMOS)))
+# makefile (from 'Makefile', line 57)
+EMCC = emcc
+# environment
+VSCODE_CWD = /home/jnyamiak
+# environment
+SSH_CONNECTION = 131.215.220.164 3016 131.215.140.112 22
+# environment
+PATH = /home/jnyamiak/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# environment
+XDG_RUNTIME_DIR = /run/user/1352
+# environment
+VSCODE_LOG_STACK = false
+# makefile (from 'Makefile', line 11)
+TEST_LIBS = vector polygon body scene student_tests
+# environment
+VSCODE_IPC_HOOK_CLI = /run/user/1352/vscode-ipc-8872b763-c9d5-4314-bb9a-40151629a3c0.sock
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/jnyamiak/cs3/project06-candyapple
+# default
+.LOADED := 
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/jnyamiak
+# makefile (from 'Makefile', line 7)
+STUDENT_LIBS = random vector list polygon body collision scene forces
+# environment
+LOGNAME = jnyamiak
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+MATHEMATICA_HOME = /usr/local/Wolfram/Mathematica/12.3
+# automatic
++F = $(notdir $+)
+# makefile (from 'Makefile', line 61)
+LIB_MATH = -lm
+# makefile (from 'Makefile', line 76)
+TEST_BINS = $(addprefix bin/test_suite_,$(TEST_LIBS))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 0
+# makefile (from 'Makefile', line 70)
+STUDENT_OBJS = $(addprefix out/,$(STUDENT_LIBS:=.o))
+# makefile (from 'Makefile', line 37)
+CC = clang
+# environment
+XDG_SESSION_ID = 63109
+# environment
+USER = jnyamiak
+# makefile
+.DEFAULT_GOAL := all
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := make
+# makefile (from 'Makefile', line 17)
+CLEAN_COMMAND = find out/ ! -name .gitignore -type f -delete && find bin/ ! -name .gitignore -type f -delete
+# default
+.VARIABLES := 
+# automatic
+ 
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_CLIENT = 131.215.220.164 3016 22
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+BROWSER = /home/jnyamiak/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/bin/helpers/browser.sh
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# makefile (from 'Makefile', line 4)
+STAFF_LIBS = test_util sdl_wrapper
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 2)
+DEMOS = bounce gravity pacman nbodies damping spaceinvaders pegs breakout
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 65)
+LIBS = $(LIB_MATH) $(shell sdl2-config --libs) -lSDL2_gfx
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+LANG = C
+# makefile (from 'Makefile', line 58)
+EMCC_FLAGS = -s EXIT_RUNTIME=1 -s ALLOW_MEMORY_GROWTH=1 -s INITIAL_MEMORY=655360000 -s USE_SDL=2 -s USE_SDL_GFX=2 -s USE_SDL_IMAGE=2 -s SDL2_IMAGE_FORMATS='["png"]' -s USE_SDL_TTF=2 -s USE_SDL_MIXER=2 -s ASSERTIONS=1 -O2 -g -gsource-map --source-map-base http://labradoodle.caltech.edu:$(shell cs3-port)/bin/
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# makefile (from 'Makefile', line 73)
+WASM_STUDENT_OBJS = $(addprefix out/,$(STUDENT_LIBS:=.wasm.o))
+# environment
+MOTD_SHOWN = pam
+# variable set hash-table stats:
+# Load=83/1024=8%, Rehash=0, Collisions=23/140=16%
+ 
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# library (device 66306, inode 52880515): 13 files, no impossibilities.
+# . (device 66306, inode 52879886): 15 files, no impossibilities.
+# out (device 66306, inode 52880516): 2 files, no impossibilities.
+# tests (device 66306, inode 52880525): 5 files, no impossibilities so far.
+# demo (device 66306, inode 52879947): 10 files, no impossibilities.
+
+# 45 files, no impossibilities in 5 directories.
+
+# Implicit Rules
+
+out/%.o: library/%.c
+#  recipe to execute (from 'Makefile', line 104):
+	$(CC) -c $(CFLAGS) $^ -o $@
+
+out/%.o: demo/%.c
+#  recipe to execute (from 'Makefile', line 106):
+	$(CC) -c $(CFLAGS) $^ -o $@
+
+out/%.o: tests/%.c
+#  recipe to execute (from 'Makefile', line 108):
+	$(CC) -c $(CFLAGS) $^ -o $@
+
+out/%.wasm.o: library/%.c
+#  recipe to execute (from 'Makefile', line 113):
+	$(EMCC) -c $(CFLAGS) $^ -o $@
+
+out/%.wasm.o: demo/%.c
+ 
+#  recipe to execute (from 'Makefile', line 115):
+	$(EMCC) -c $(CFLAGS) $^ -o $@
+
+out/%.wasm.o: tests/%.c
+#  recipe to execute (from 'Makefile', line 117):
+	$(EMCC) -c $(CFLAGS) $^ -o $@
+
+bin/%.html: out/emscripten.wasm.o out/%.wasm.o out/sdl_wrapper.wasm.o out/random.wasm.o out/vector.wasm.o out/list.wasm.o out/polygon.wasm.o out/body.wasm.o out/collision.wasm.o out/scene.wasm.o out/forces.wasm.o
+#  recipe to execute (from 'Makefile', line 123):
+		$(EMCC) $(EMCC_FLAGS) $(CFLAGS) $(LIBS) $^ -o $@
+
+bin/test_suite_%: out/test_suite_%.o out/test_util.o out/sdl_wrapper.o out/random.o out/vector.o out/list.o out/polygon.o out/body.o out/collision.o out/scene.o out/forces.o
+#  recipe to execute (from 'Makefile', line 129):
+	$(CC) $(CFLAGS) $(LIBS) $^ -o $@
+
+# 8 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+tests/test_suite_vector.c:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-05-12 06:14:10.361603624
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bin/damping.html:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+out/list.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+out/collision.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+all: bin/test_suite_vector bin/test_suite_polygon bin/test_suite_body bin/test_suite_scene bin/test_suite_student_tests bin/bounce.html bin/gravity.html bin/pacman.html bin/nbodies.html bin/damping.html bin/spaceinvaders.html bin/pegs.html bin/breakout.html server
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/16=0%
+
+.PHONY: all clean test
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# 'override' directive
+out/test_util.o: .SHELLSTATUS := 0
+out/test_util.o: library/test_util.c
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'test_util'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := out/test_util.o
+# automatic
+# % := 
+# automatic
+# * := test_util
+# automatic
+ 
+# + := library/test_util.c
+# automatic
+# | := 
+# automatic
+# < := library/test_util.c
+# automatic
+# ^ := library/test_util.c
+# automatic
+# ? := library/test_util.c
+# variable set hash-table stats:
+# Load=9/32=28%, Rehash=0, Collisions=3/19=16%
+#  recipe to execute (from 'Makefile', line 104):
+	$(CC) -c $(CFLAGS) $^ -o $@
+
+.PRECIOUS: out/%.o out/%.wasm.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/student_tests: out/student_tests.o out/test_util.o out/random.o out/vector.o out/list.o out/polygon.o out/body.o out/collision.o out/scene.o out/forces.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 133):
+	$(CC) $(CFLAGS) $(LIB_MATH) $^ -o $@
+
+# Not a target:
+out/scene.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+# Not a target:
+bin/pegs.html:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+out/sdl_wrapper.o: library/sdl_wrapper.c
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'sdl_wrapper'
+#  File is an intermediate prerequisite.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 104):
+	$(CC) -c $(CFLAGS) $^ -o $@
+
+# Not a target:
+bin/test_suite_body:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-05-15 19:34:03.151373649
+#  File has been updated.
+#  Successfully updated.
+
+server:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 89):
+	@echo "Go to \033[0;32mhttp://labradoodle.caltech.edu:$(shell cs3-port)/bin/\033[0m to access your demo!" && \
+	python3 -m http.server $(shell cs3-port) | grep -v "Serving HTTP"
+
+# Not a target:
+bin/spaceinvaders.html:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/test_suite_scene:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ 
+out/body.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test: bin/test_suite_vector bin/test_suite_polygon bin/test_suite_body bin/test_suite_scene bin/test_suite_student_tests
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 145):
+	set -e; for f in $(TEST_BINS); do echo $$f; $$f; echo; done
+
+# Not a target:
+bin/test_suite_polygon:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/gravity.html:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/nbodies.html:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+# Not a target:
+bin/pacman.html:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+out/student_tests.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+out/random.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+out/forces.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/test_suite_vector: out/test_suite_vector.o out/test_util.o out/sdl_wrapper.o out/random.o out/vector.o out/list.o out/polygon.o out/body.o out/collision.o out/scene.o out/forces.o
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'vector'
+#  File does not exist.
+#  File has been updated.
+ 
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/16=0%
+#  recipe to execute (from 'Makefile', line 129):
+	$(CC) $(CFLAGS) $(LIBS) $^ -o $@
+
+# Not a target:
+out/polygon.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+library/test_util.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-12 06:17:27.354537837
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/test_suite_student_tests:
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+out/%.wasm.o:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+library/sdl_wrapper.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 149):
+	$(CLEAN_COMMAND)
+
+# Not a target:
+out/vector.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+# Not a target:
+bin/bounce.html:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# 'override' directive
+out/test_suite_vector.o: .SHELLSTATUS := 0
+out/test_suite_vector.o: tests/test_suite_vector.c
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'test_suite_vector'
+#  File is an intermediate prerequisite.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := out/test_suite_vector.o
+# automatic
+# % := 
+# automatic
+# * := test_suite_vector
+# automatic
+# + := tests/test_suite_vector.c
+# automatic
+ 
+# | := 
+# automatic
+# < := tests/test_suite_vector.c
+# automatic
+# ^ := tests/test_suite_vector.c
+# automatic
+# ? := tests/test_suite_vector.c
+# variable set hash-table stats:
+# Load=9/32=28%, Rehash=0, Collisions=3/19=16%
+#  recipe to execute (from 'Makefile', line 108):
+	$(CC) -c $(CFLAGS) $^ -o $@
+
+# Not a target:
+bin/breakout.html:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+out/%.o:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=40/1024=4%, Rehash=0, Collisions=1/124=1%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 101 / storage = 1381 B / avg = 13 B
+# current buf: size = 8162 B / used = 1381 B / count = 101 / avg = 13 B
+
+# strcache performance: lookups = 179 / hit rate = 43%
+# hash-table stats:
+# Load=101/8192=1%, Rehash=0, Collisions=4/179=2%
+ 
+# Finished Make data base on Sun May 15 19:35:00 2022
+
+ 

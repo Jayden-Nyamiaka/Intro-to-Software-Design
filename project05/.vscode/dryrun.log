@@ -1,0 +1,52 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/jnyamiak/cs3/project05-nidorino'
+clang -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/test_util.c -o out/test_util.o
+clang -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/random.c -o out/random.o
+clang -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/vector.c -o out/vector.o
+clang -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/list.c -o out/list.o
+clang -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/polygon.c -o out/polygon.o
+clang -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/body.c -o out/body.o
+clang -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/collision.c -o out/collision.o
+clang -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/scene.c -o out/scene.o
+clang -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/forces.c -o out/forces.o
+clang -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer tests/test_suite_vector.c -o out/test_suite_vector.o
+clang -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/sdl_wrapper.c -o out/sdl_wrapper.o
+clang -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer -lm -lSDL2 -lSDL2_gfx out/test_suite_vector.o out/test_util.o out/sdl_wrapper.o out/random.o out/vector.o out/list.o out/polygon.o out/body.o out/collision.o out/scene.o out/forces.o -o bin/test_suite_vector
+clang -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer tests/test_suite_polygon.c -o out/test_suite_polygon.o
+clang -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer -lm -lSDL2 -lSDL2_gfx out/test_suite_polygon.o out/test_util.o out/sdl_wrapper.o out/random.o out/vector.o out/list.o out/polygon.o out/body.o out/collision.o out/scene.o out/forces.o -o bin/test_suite_polygon
+clang -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer tests/test_suite_body.c -o out/test_suite_body.o
+clang -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer -lm -lSDL2 -lSDL2_gfx out/test_suite_body.o out/test_util.o out/sdl_wrapper.o out/random.o out/vector.o out/list.o out/polygon.o out/body.o out/collision.o out/scene.o out/forces.o -o bin/test_suite_body
+clang -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer tests/test_suite_scene.c -o out/test_suite_scene.o
+clang -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer -lm -lSDL2 -lSDL2_gfx out/test_suite_scene.o out/test_util.o out/sdl_wrapper.o out/random.o out/vector.o out/list.o out/polygon.o out/body.o out/collision.o out/scene.o out/forces.o -o bin/test_suite_scene
+clang -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer tests/test_suite_student_tests.c -o out/test_suite_student_tests.o
+clang -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer -lm -lSDL2 -lSDL2_gfx out/test_suite_student_tests.o out/test_util.o out/sdl_wrapper.o out/random.o out/vector.o out/list.o out/polygon.o out/body.o out/collision.o out/scene.o out/forces.o -o bin/test_suite_student_tests
+emcc -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/emscripten.c -o out/emscripten.wasm.o
+emcc -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer demo/bounce.c -o out/bounce.wasm.o
+emcc -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/sdl_wrapper.c -o out/sdl_wrapper.wasm.o
+emcc -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/random.c -o out/random.wasm.o
+emcc -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/vector.c -o out/vector.wasm.o
+emcc -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/list.c -o out/list.wasm.o
+emcc -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/polygon.c -o out/polygon.wasm.o
+emcc -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/body.c -o out/body.wasm.o
+emcc -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/collision.c -o out/collision.wasm.o
+ 
+emcc -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/scene.c -o out/scene.wasm.o
+emcc -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer library/forces.c -o out/forces.wasm.o
+ 
+/usr/bin/cs3-port: fork: retry: Resource temporarily unavailable
+
+emcc -s EXIT_RUNTIME=1 -s ALLOW_MEMORY_GROWTH=1 -s INITIAL_MEMORY=655360000 -s USE_SDL=2 -s USE_SDL_GFX=2 -s USE_SDL_IMAGE=2 -s SDL2_IMAGE_FORMATS='["png"]' -s USE_SDL_TTF=2 -s USE_SDL_MIXER=2 -s ASSERTIONS=1 -O2 -g -gsource-map --source-map-base http://labradoodle.caltech.edu:7974/bin/ -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer -lm -lSDL2 -lSDL2_gfx out/emscripten.wasm.o out/bounce.wasm.o out/sdl_wrapper.wasm.o out/random.wasm.o out/vector.wasm.o out/list.wasm.o out/polygon.wasm.o out/body.wasm.o out/collision.wasm.o out/scene.wasm.o out/forces.wasm.o -o bin/bounce.html
+emcc -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer demo/gravity.c -o out/gravity.wasm.o
+emcc -s EXIT_RUNTIME=1 -s ALLOW_MEMORY_GROWTH=1 -s INITIAL_MEMORY=655360000 -s USE_SDL=2 -s USE_SDL_GFX=2 -s USE_SDL_IMAGE=2 -s SDL2_IMAGE_FORMATS='["png"]' -s USE_SDL_TTF=2 -s USE_SDL_MIXER=2 -s ASSERTIONS=1 -O2 -g -gsource-map --source-map-base http://labradoodle.caltech.edu:7974/bin/ -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer -lm -lSDL2 -lSDL2_gfx out/emscripten.wasm.o out/gravity.wasm.o out/sdl_wrapper.wasm.o out/random.wasm.o out/vector.wasm.o out/list.wasm.o out/polygon.wasm.o out/body.wasm.o out/collision.wasm.o out/scene.wasm.o out/forces.wasm.o -o bin/gravity.html
+emcc -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer demo/pacman.c -o out/pacman.wasm.o
+emcc -s EXIT_RUNTIME=1 -s ALLOW_MEMORY_GROWTH=1 -s INITIAL_MEMORY=655360000 -s USE_SDL=2 -s USE_SDL_GFX=2 -s USE_SDL_IMAGE=2 -s SDL2_IMAGE_FORMATS='["png"]' -s USE_SDL_TTF=2 -s USE_SDL_MIXER=2 -s ASSERTIONS=1 -O2 -g -gsource-map --source-map-base http://labradoodle.caltech.edu:7974/bin/ -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer -lm -lSDL2 -lSDL2_gfx out/emscripten.wasm.o out/pacman.wasm.o out/sdl_wrapper.wasm.o out/random.wasm.o out/vector.wasm.o out/list.wasm.o out/polygon.wasm.o out/body.wasm.o out/collision.wasm.o out/scene.wasm.o out/forces.wasm.o -o bin/pacman.html
+emcc -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer demo/nbodies.c -o out/nbodies.wasm.o
+emcc -s EXIT_RUNTIME=1 -s ALLOW_MEMORY_GROWTH=1 -s INITIAL_MEMORY=655360000 -s USE_SDL=2 -s USE_SDL_GFX=2 -s USE_SDL_IMAGE=2 -s SDL2_IMAGE_FORMATS='["png"]' -s USE_SDL_TTF=2 -s USE_SDL_MIXER=2 -s ASSERTIONS=1 -O2 -g -gsource-map --source-map-base http://labradoodle.caltech.edu:7974/bin/ -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer -lm -lSDL2 -lSDL2_gfx out/emscripten.wasm.o out/nbodies.wasm.o out/sdl_wrapper.wasm.o out/random.wasm.o out/vector.wasm.o out/list.wasm.o out/polygon.wasm.o out/body.wasm.o out/collision.wasm.o out/scene.wasm.o out/forces.wasm.o -o bin/nbodies.html
+emcc -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer demo/damping.c -o out/damping.wasm.o
+emcc -s EXIT_RUNTIME=1 -s ALLOW_MEMORY_GROWTH=1 -s INITIAL_MEMORY=655360000 -s USE_SDL=2 -s USE_SDL_GFX=2 -s USE_SDL_IMAGE=2 -s SDL2_IMAGE_FORMATS='["png"]' -s USE_SDL_TTF=2 -s USE_SDL_MIXER=2 -s ASSERTIONS=1 -O2 -g -gsource-map --source-map-base http://labradoodle.caltech.edu:7974/bin/ -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer -lm -lSDL2 -lSDL2_gfx out/emscripten.wasm.o out/damping.wasm.o out/sdl_wrapper.wasm.o out/random.wasm.o out/vector.wasm.o out/list.wasm.o out/polygon.wasm.o out/body.wasm.o out/collision.wasm.o out/scene.wasm.o out/forces.wasm.o -o bin/damping.html
+emcc -c -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer demo/spaceinvaders.c -o out/spaceinvaders.wasm.o
+emcc -s EXIT_RUNTIME=1 -s ALLOW_MEMORY_GROWTH=1 -s INITIAL_MEMORY=655360000 -s USE_SDL=2 -s USE_SDL_GFX=2 -s USE_SDL_IMAGE=2 -s SDL2_IMAGE_FORMATS='["png"]' -s USE_SDL_TTF=2 -s USE_SDL_MIXER=2 -s ASSERTIONS=1 -O2 -g -gsource-map --source-map-base http://labradoodle.caltech.edu:7974/bin/ -fsanitize=address -Iinclude -I/usr/include/SDL2 -D_REENTRANT -Wall -g -fno-omit-frame-pointer -lm -lSDL2 -lSDL2_gfx out/emscripten.wasm.o out/spaceinvaders.wasm.o out/sdl_wrapper.wasm.o out/random.wasm.o out/vector.wasm.o out/list.wasm.o out/polygon.wasm.o out/body.wasm.o out/collision.wasm.o out/scene.wasm.o out/forces.wasm.o -o bin/spaceinvaders.html
+echo "Go to \033[0;32mhttp://labradoodle.caltech.edu:7974/bin/\033[0m to access your demo!" && \
+python3 -m http.server 7974 | grep -v "Serving HTTP"
+make: Leaving directory '/home/jnyamiak/cs3/project05-nidorino'
+ 
