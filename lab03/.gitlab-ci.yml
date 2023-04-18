@@ -1,0 +1,2 @@
+mytest: 
+    script: "/testers/cs3/lab03/mytest/test"

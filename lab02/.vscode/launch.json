@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        // INSTRUCTIONS FOR DEBUGGING
+        // 1. Set breakpoints in mystring.c
+        // 2. Run "clang mystring.c mystringtest.c -o mystring -g" to produce a mystring executable
+        // 3. Navigate to the debugger window, press the play button
+        // 4. Reference this guide if you get stuck "https://sof.tware.design/22sp/documents/debugging" 
+
+        // If you want to change the input file, change the arg in "args"
+        {
+            "name": "Debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}",
+            "args": ["data/simple"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+    ]
+}
