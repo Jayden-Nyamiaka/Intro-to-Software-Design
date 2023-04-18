@@ -1,7 +1,7 @@
 # Intro-to-Software-Design
 An Introduction to Software Design. Includes a Physics Engine and a Game.
 
-Resources for the labs, projects, and assessments can be found at the following links
+Resources for the labs, projects, and assessments can be found at the following link
 - [Course Website](https://sof.tware.design/22sp)
 
 ## Grade Received: A+
